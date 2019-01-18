@@ -203,7 +203,7 @@ a {
       .newside > .side:nth-child(n+2):nth-child(n+2):hover {
         background-color: #B28451; }
   .newside > .side__item1 {
-    width: 4.5%;
+    width: 4.2rem;
     border-radius: 50%; }
   .newside > .side__item1 > .side_icon {
     width: 4.2rem;
