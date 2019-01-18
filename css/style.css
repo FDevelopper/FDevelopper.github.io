@@ -216,7 +216,7 @@ a {
 
 .header {
   background-color: #54483A;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/backy.jpg);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/images/backy.jpg);
   background-size: cover;
   background-position: center;
   padding: 8rem;
