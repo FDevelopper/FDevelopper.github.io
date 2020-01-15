@@ -1,28 +1,41 @@
 
+     // detect Edge and explorer
+     (function detect() {
+         if (document.documentMode || /Edge\//.test(navigator.userAgent)) {
+            alert('internet explorer is  not currently supported. Please use chrome or firefox.You will be redirected to the previous page');
+            history.back();
+         } else {
+             document.body.style.display = ''
+
+         }
+     })();
+
+
       //Scroll on click
-let layout = document.querySelector(".container");
-let btn = document.querySelector('.side__item1');
-let sidebar = document.querySelector('.sidebar');
-let element = document.querySelectorAll('.element');
+var layout = document.querySelector(".container");
+var btn = document.querySelector('.side__item1');
+var sidebar = document.querySelector('.sidebar');
+var element = document.querySelectorAll('.element');
 
 //open or close menu
-btn.addEventListener('click',e => {
+btn.addEventListener('click',function(e)  {
        e.preventDefault();
        sidebar.classList.toggle('newside');
        layout.classList.toggle('new_view');
 
 });
 //scroll on click and close menu
-element.forEach((evt)=>{
-    evt.addEventListener('click',e=>{
-        e.preventDefault();
-        layout.classList.remove('new_view');
-        sidebar.classList.remove('newside');
-    });
-});
+     Array.prototype.forEach.call(element ,function(evt){
+         evt.addEventListener('click',function(e){
+             e.preventDefault();
+             layout.classList.remove('new_view');
+             sidebar.classList.remove('newside');
+         });
+     });
+
   //revert hanburg button when resizing back///
-let breakpoint = window.matchMedia("(min-width: 856px");
-let removeView = (x)=>{
+var breakpoint = window.matchMedia("(min-width: 856px");
+var removeView = function(x){
     if(x.matches) {
         layout.classList.remove('new_view');
         sidebar.classList.remove('newside');
@@ -32,12 +45,12 @@ removeView(breakpoint);
 breakpoint.addListener(removeView);
 
 /*
-let item1 = document.querySelector('.side__item2');
-let item2 = document.querySelector('.side__item3');
-let item3 = document.querySelector('.side__item4');
-let item4 = document.querySelector('.side__item5');
-let item5 = document.querySelector('.side__item5');
-let item6 = document.querySelector('.side__item7');
+var item1 = document.querySelector('.side__item2');
+var item2 = document.querySelector('.side__item3');
+var item3 = document.querySelector('.side__item4');
+var item4 = document.querySelector('.side__item5');
+var item5 = document.querySelector('.side__item5');
+var item6 = document.querySelector('.side__item7');
 
 
 item1.addEventListener('click',e=>{
@@ -71,14 +84,14 @@ item6.addEventListener('click',e=>{
 });*/
 
      //animate on scroll
-       let lastId,
+       var lastId,
        topMenu = $('#sidebar'),
        topMenuHeight = topMenu.outerHeight()+15;
 
        //all items
       menuItems = topMenu.find("a");
       scrollItems = menuItems.map(function() {
-          let item = $($(this).attr("href"));
+          var item = $($(this).attr("href"));
           if(item.length) {
               return item;
           }
@@ -87,14 +100,14 @@ item6.addEventListener('click',e=>{
         //Bind to scroll
       $(window).scroll(function() {
            //get container scroll position
-          let fromTop = $(this).scrollTop()+topMenuHeight;
-          let cur = scrollItems.map(function() {
+          var fromTop = $(this).scrollTop()+topMenuHeight;
+          var cur = scrollItems.map(function() {
               if($(this).offset().top<fromTop)
                   return this;
           });
             //get id of current scroll item
           cur = cur[cur.length -1];
-          let id = cur && cur.length ? cur[0].id : '';
+          var id = cur && cur.length ? cur[0].id : '';
           if(lastId !==id) {
               lastId = id;
                  //set/remove active class
@@ -104,7 +117,7 @@ item6.addEventListener('click',e=>{
           }
       });
       menuItems.click(function(e){
-          let  href = $(this).attr("href"),
+          var  href = $(this).attr("href"),
               offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
           console.log($(this));
           $('html, body').stop().animate({
