@@ -1,8 +1,9 @@
 
      // detect Edge and explorer
+        // || /Edge\//.test(navigator.userAgent)
      (function detect() {
-         if (document.documentMode || /Edge\//.test(navigator.userAgent)) {
-            alert('internet explorer is  not currently supported. Please use chrome or firefox.You will be redirected to the previous page');
+         if (document.documentMode ) {
+            alert('internet explorer is  currently not  supported. Please use chrome or firefox.You will be redirected to the previous page');
             history.back();
          } else {
              document.body.style.display = ''
