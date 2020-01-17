@@ -90,7 +90,7 @@ a {
   flex-direction: column;
   position: fixed;
   height: 100%;
-  width: 12rem;
+  width: 13.5rem;
   top: 0;
   left: 0; }
   .sidebar > * {
@@ -114,7 +114,9 @@ a {
     text-decoration: none;
     list-style: none;
     color: white;
-    padding: 1rem; }
+    padding: 1rem;
+  font-weight: bold
+  }
   .sidebar > .side:hover {
     background-color: #B28451; }
   @media only screen and (max-width: 75em) {
@@ -186,6 +188,7 @@ a {
     margin: 1.5rem 2rem;
   }
 }*/
+
 .newside {
   grid-row: 1/2;
   grid-column: 1/-1;
@@ -464,6 +467,7 @@ a {
   grid-column: 1/-1; }
 
 .gallery {
+    margin-left:5.5rem;
   background-color: #f9f7f6;
   grid-column: full-start/full-end;
   display: grid;
