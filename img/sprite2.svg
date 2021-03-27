@@ -76,16 +76,16 @@
 <title>left-quote</title>
 <path d="M32 28v-12h-8c0-4.41 3.586-8 8-8v-4c-6.617 0-12 5.383-12 12v12h12zM12 28v-12h-8c0-4.41 3.586-8 8-8v-4c-6.617 0-12 5.383-12 12v12h12z"></path>
 </symbol>
-<symbol id="icon-home" viewBox="0 0 32 32">
-<title>home</title>
+<symbol id="icon-project" viewBox="0 0 32 32">
+<title>project</title>
 <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
 </symbol>
-<symbol id="icon-home2" viewBox="0 0 32 32">
-<title>home2</title>
+<symbol id="icon-project2" viewBox="0 0 32 32">
+<title>project2</title>
 <path d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z"></path>
 </symbol>
-<symbol id="icon-home3" viewBox="0 0 32 32">
-<title>home3</title>
+<symbol id="icon-project3" viewBox="0 0 32 32">
+<title>project3</title>
 <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
 </symbol>
 <symbol id="icon-files-empty" viewBox="0 0 32 32">

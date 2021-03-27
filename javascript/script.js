@@ -56,7 +56,7 @@ var item6 = document.querySelector('.side__item7');
 
 item1.addEventListener('click',e=>{
        e.preventDefault();
-       document.querySelector('.homes').scrollIntoView({ behavior: 'smooth' });
+       document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' });
 });
 
 item2.addEventListener('click',e=>{
