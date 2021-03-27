@@ -271,7 +271,7 @@ a {
   justify-self: start;
   align-self: start; }
 
-.languages {
+.realtors {
   padding: 3rem;
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
@@ -280,27 +280,27 @@ a {
   justify-content: center;
   grid-row-gap: 2rem; }
   @media only screen and (max-width: 50em) {
-    .languages {
+    .realtors {
       grid-column: 1/-1; } }
-  .languages .title {
+  .realtors .title {
     text-align: center; }
-  .languages img {
+  .realtors img {
     width: 4.5rem;
     height: 4.5rem;
     display: block; }
-  .languages__list {
+  .realtors__list {
     display: grid;
     grid-template-columns: min-content  max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center; }
     @media only screen and (max-width: 50em) {
-      .languages__list {
+      .realtors__list {
         grid-template-columns: repeat(3, min-content max-content); } }
     @media only screen and (max-width: 37.5em) {
-      .languages__list {
+      .realtors__list {
         grid-template-columns: min-content  max-content; } }
-  .languages__sold {
+  .realtors__sold {
     text-transform: uppercase;
     color: #aaa;
     margin-top: -3px; }
@@ -405,28 +405,28 @@ a {
   .btn:hover {
     background-color: #B28451; }
 
-.projects {
+.homes {
   grid-column: center-start/center-end;
   display: grid;
   margin: 15rem 0;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-gap: 7rem; }
 
-.project {
+.home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content min-content;
   grid-row-gap: 3.5rem;
   background-color: #f9f7f6; }
-  .project__item {
+  .home__item {
     grid-column: 1/-1;
     grid-row: 1/2; }
-  .project__img {
+  .home__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 1; }
-  .project__like {
+  .home__like {
     grid-column: 2/3;
     grid-row: 1/2;
     fill: #c69963;
@@ -435,7 +435,7 @@ a {
     z-index: 2;
     justify-self: end;
     margin: 1rem; }
-  .project__name {
+  .home__name {
     grid-column: 1/-1;
     grid-row: 1/2;
     width: 80%;
@@ -450,14 +450,14 @@ a {
     background-color: #101d2c;
     font-weight: 400;
     z-index: 4; }
-  .project__location, .project__rooms {
+  .home__location, .home__rooms {
     margin-top: 2.5rem; }
-  .project__location, .project__rooms, .project__area, .project__price {
+  .home__location, .home__rooms, .home__area, .home__price {
     margin-left: 2rem;
     font-size: 1.5rem;
     display: flex;
     align-items: center; }
-    .project__location svg, .project__rooms svg, .project__area svg, .project__price svg {
+    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
       fill: #c69963;
       height: 2rem;
       width: 2rem;
