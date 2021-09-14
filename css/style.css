@@ -313,7 +313,9 @@ a {
   grid-gap: 6rem;
   align-items: start;
   align-content: center; }
-
+.highlight:hover {
+    background-color: #e5e5e5;
+}
 .feature {
   /* float: left;
   width: 33.33%;*/
@@ -330,6 +332,7 @@ a {
   .feature_text {
     font-size: 1.7rem;
     grid-column: 2/-1; }
+   
   .feature_text > a {
     font-size: 1.7rem;
     grid-column: 2/-1;
